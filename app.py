@@ -22,7 +22,7 @@ import torch
 
 # ───────────────────── OpenRouter helper ──────────────────────────────────
 API_KEY = st.secrets.get("OPENROUTER_API_KEY") or os.getenv("OPENROUTER_API_KEY") or ""
-MODEL   = "mistralai/mistral-7b-instruct"  # free
+MODEL   = "shisa-ai/shisa-v2-llama3.3-70b:free"  # free
 
 def openrouter_generate(prompt, temperature=0.8):
     url = "https://openrouter.ai/api/v1/chat/completions"
